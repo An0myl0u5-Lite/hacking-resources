@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-This repository contains **500+ tools and resources** across 14 major security domains. This analysis identifies the most powerful products, their use cases, and recommendations for building a comprehensive security toolkit.
+This repository contains **500+ tools and resources** across 14 major security domains. This analysis identifies the most powerful products, their use cases, and recommendations for building a comprehensive security toolkit. An addendum covers **2025-2026 emerging tools**, including the new AI/LLM security category.
 
 ---
 
@@ -419,19 +419,158 @@ This repository contains **500+ tools and resources** across 14 major security d
 
 ---
 
+## Part 7: 2025-2026 EMERGING TOOLS & UPDATES
+
+### 7.1 AI-POWERED PENTESTING TOOLS (NEW CATEGORY)
+
+| Tool | Type | Description |
+|------|------|-------------|
+| **[PentestGPT](https://github.com/GreyDGL/PentestGPT)** | LLM-Assisted | Uses GPT-4 to guide through recon, exploitation, post-exploitation |
+| **[PentAGI](https://github.com/vxcontrol/pentagi)** | Autonomous Agent | AI agent that selects and executes testing steps in sandboxed Docker with 20+ built-in tools |
+| **[Nebula](https://github.com/berylliumsec/nebula)** | CLI AI Assistant | Integrates AI models into command line for real-time security analysis |
+| **[Strix](https://strix.security/)** | Autonomous System | AI agents that behave like human attackers, produces real evidence not theoretical alerts |
+| **[Penligent.ai](https://www.penligent.ai/)** | Force Multiplier | Automates 80% of repetitive recon/scanning, freeing humans for complex logic flaws |
+
+---
+
+### 7.2 AI/LLM RED TEAMING TOOLS (ENTIRELY NEW CATEGORY)
+
+These tools address an attack surface that did not exist when the repository was last updated:
+
+| Tool | Developer | Key Features |
+|------|-----------|--------------|
+| **[DeepTeam](https://github.com/confident-ai/deepteam)** | Confident AI | 40+ vulnerability types, 10+ attack methods, OWASP LLM Top 10 and NIST AI RMF support |
+| **[Garak](https://github.com/NVIDIA/garak)** | NVIDIA | 100+ attack modules from prompt injection to data extraction |
+| **[PyRIT](https://github.com/Azure/PyRIT)** | Microsoft | Python Risk Identification Toolkit - the de facto standard for orchestrating LLM attack suites |
+| **[ARTKIT](https://github.com/BCG-X-Official/artkit)** | BCG | Multi-turn adversarial simulation framework |
+| **[Mindgard DAST-AI](https://mindgard.ai/)** | Mindgard | Continuous automatic red teaming (CART), Dynamic Application Security Testing for AI |
+| **[AutoRTAI](https://hiddenlayer.com/)** | HiddenLayer | Agent-based automated AI red teaming at scale |
+
+**Regulatory drivers:** EU AI Act (Art. 15) requires adversarial testing evidence for high-risk AI by mid-2026. US Executive Order 14110 requires frontier model developers to share red-team results with federal agencies.
+
+**Related frameworks:**
+- MITRE ATLAS - Knowledge base of adversarial AI tactics (like ATT&CK but for AI)
+- OWASP Gen AI Red Teaming Guide
+- NIST AI Risk Management Framework
+
+---
+
+### 7.3 UPDATED VULNERABILITY SCANNING
+
+| Tool | Stars | What It Does | Status |
+|------|-------|--------------|--------|
+| **[Nuclei](https://github.com/projectdiscovery/nuclei)** | 22k+ | YAML-based community-driven vuln scanner, AI template editor | v10.3.8 (Jan 2026), 10k+ templates |
+| **[Katana](https://github.com/projectdiscovery/katana)** | 12k+ | Next-gen web crawling and spidering framework | Active |
+| **[httpx](https://github.com/projectdiscovery/httpx)** | 8k+ | Fast multi-purpose HTTP toolkit | Active |
+| **[Dalfox](https://github.com/hahwul/dalfox)** | 4k+ | XSS scanner with automated bypass techniques | Active |
+| **[Wapiti](https://wapiti-scanner.github.io/)** | Updated | Now supports SSTI, JWT fuzzing (2025) | v3.2+ |
+| **OWASP ZAP** | Updated | v2.16.1 (March 2025) | Active |
+
+**Nuclei highlight:** 243 new templates added in October 2025 alone, covering 44 actively exploited CISA KEVs. Template Bounty Program launched for community contributions.
+
+---
+
+### 7.4 CLOUD SECURITY TOOLS (EXPANDED)
+
+#### AWS
+| Tool | Description |
+|------|-------------|
+| **[Pacu](https://github.com/RhinoSecurityLabs/pacu)** | AWS exploitation framework (actively maintained) |
+| **[Prowler](https://github.com/prowler-cloud/prowler)** | CIS, NIST, PCI benchmark auditing for AWS/Azure/GCP |
+| **[CloudMapper](https://github.com/duo-labs/cloudmapper)** | AWS environment visualization and auditing |
+
+#### Azure
+| Tool | Description |
+|------|-------------|
+| **[MicroBurst](https://github.com/NetSPI/MicroBurst)** | PowerShell toolkit for Azure pentesting |
+| **[ScoutSuite](https://github.com/nccgroup/ScoutSuite)** | Multi-cloud security auditing (AWS, Azure, GCP, Oracle) |
+
+#### Multi-Cloud
+| Tool | Description |
+|------|-------------|
+| **[CloudSploit](https://github.com/aquasecurity/cloudsploit)** | Open-source cloud misconfiguration scanner |
+| **[Trivy](https://github.com/aquasecurity/trivy)** | Containers, IaC, Kubernetes, cloud scanning |
+
+---
+
+### 7.5 OSINT TOOLS (2025-2026 ADDITIONS)
+
+| Tool | Description |
+|------|-------------|
+| **[SL Crimewall](https://sociallinks.io/)** | Next-gen all-in-one OSINT investigation platform |
+| **[ShadowDragon](https://shadowdragon.io/)** | 225+ data sources, real-time monitoring |
+| **[Babel X](https://babelstreet.com/)** | AI-powered, 200+ languages, dark web support |
+| **[OSINT-BIBLE](https://github.com/frangelbarrera/OSINT-BIBLE)** | Comprehensive 2026 OSINT guide with tools, methodologies, ethics |
+
+---
+
+### 7.6 MALWARE ANALYSIS UPDATES
+
+| Tool | What Changed |
+|------|-------------|
+| **Ghidra 11.x** | AI hints for function naming, crypto routine detection |
+| **[YARA-X](https://github.com/VirusTotal/yara-x)** | Complete Rust rewrite - significantly faster |
+| **[ANY.RUN](https://any.run/)** | Cloud-based interactive sandbox with live VM interaction |
+| **Cuckoo Sandbox** | Windows 11 guest support, Docker deployment |
+
+---
+
+### 7.7 COMPREHENSIVE GITHUB COMPILATIONS (RECENTLY UPDATED)
+
+| Repository | Description |
+|------------|-------------|
+| **[eudk/awesome-cybersecurity-tools](https://github.com/eudk/awesome-cybersecurity-tools)** | Large, comprehensive, updated Sept 2025 |
+| **[Hack-with-Github/Awesome-Hacking](https://github.com/Hack-with-Github/Awesome-Hacking)** | Meta-list of awesome hacking lists |
+| **[vavkamil/awesome-bugbounty-tools](https://github.com/vavkamil/awesome-bugbounty-tools)** | Bug bounty focused compilation |
+| **[amrelsagaei/Bug-Bounty-Hunting-Methodology-2025](https://github.com/amrelsagaei/Bug-Bounty-Hunting-Methodology-2025)** | Complete 2025 methodology |
+| **[requie/AI-Red-Teaming-Guide](https://github.com/requie/AI-Red-Teaming-Guide)** | Guide to adversarial AI testing |
+
+---
+
+### 7.8 KEY TRENDS FOR 2025-2026
+
+1. **AI Integration Everywhere** - Every major tool is adding AI/LLM features
+2. **Autonomous Pentesting Agents** - Tools that run entire assessments with minimal human input
+3. **LLM as Attack Surface** - Prompt injection, jailbreaking, data exfiltration from AI systems
+4. **Compliance-Driven Tooling** - EU AI Act & NIST AI RMF driving new tool adoption
+5. **Cloud-Native Testing** - IAM privilege chaining, serverless exploitation, Kubernetes attacks
+6. **Supply Chain Security** - SBOM enforcement, dependency confusion detection
+
+---
+
 ## Conclusion
 
 This repository provides a comprehensive arsenal for security professionals. The key to effectiveness is:
 
 1. **Master the fundamentals first** (Nmap, Burp Suite, Metasploit)
-2. **Specialize based on your role** (use the role-specific recommendations)
-3. **Build layered knowledge** (combine tools for complex assessments)
-4. **Practice continuously** (use lab environments like HackTheBox)
-5. **Stay current** (follow the blogs and news sources listed)
+2. **Specialize based on your role** (use the role-specific recommendations above)
+3. **Build layered knowledge** (combine tools for comprehensive assessments)
+4. **Integrate AI tools** (PentestGPT, Nuclei AI, DeepTeam for LLM work)
+5. **Practice continuously** (HackTheBox, TryHackMe, CTFs)
+6. **Stay current** (follow the blogs and news sources listed in the repo)
 
-The most powerful combination is not any single tool, but understanding how to chain multiple tools together for comprehensive assessments.
+The most powerful combination is not any single tool, but understanding how to **chain multiple tools together** for comprehensive assessments.
 
 ---
 
 *Report generated from analysis of the hacking-resources repository*
-*Tools count: 500+ | Categories: 14 | Cheat sheets: 10*
+*Tools count: 500+ (repo) + 40+ new (2025-2026) | Categories: 14 + 2 new | Cheat sheets: 10*
+
+---
+
+## Support This Research
+
+If this briefing was useful, consider supporting independent OSINT research:
+
+| Network | Address |
+|---------|---------|
+| Lightning | `lesslace72@walletofsatoshi.com` |
+| Bitcoin | `bc1qh2cnzmrp2pj0x2n22gfhshjnlzya9aagpuntyg` |
+| Ethereum (ERC20) | `0xd6aCF08BE2fCC2cB1f443d620d5DDe93ba02aDfA` |
+| BNB (BEP20) | `0xd6aCF08BE2fCC2cB1f443d620d5DDe93ba02aDfA` |
+
+---
+
+*This document is provided for defensive and educational purposes. Stay vigilant.*
+
+**[An0myl0u5 Research and Development](https://github.com/An0myl0u5-Lite)**
